@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
+import Navigation from '../components/Navigation'
 
 const Home: NextPage = () => {
   return (
@@ -11,25 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <nav className="w-1/2 h-screen">
-          <ul className="bg-yellow-500 flex flex-col justify-center items-center w-100 h-screen text-6xl font-black">
-            <li>
-              <h1>Introduction</h1>
-            </li>
-            <li>
-              <h1>Skills</h1>
-            </li>
-            <li>
-              <h1>Experience</h1>
-            </li>
-            <li>
-              <h1>Showcase</h1>
-            </li>
-            <li>
-              <h1>Contact</h1>
-            </li>
-          </ul>
-        </nav>
+        <Navigation />
       </main>
     </div>
   )
