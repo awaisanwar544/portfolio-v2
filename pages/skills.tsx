@@ -75,13 +75,13 @@ const Home: NextPage = () => {
           <h1 className="text-2xl uppercase font-bold text-yellow-500">Technical Skills</h1>
           <div className="flex flex-row flex-wrap justify-center">
             {
-              techList.map((item) => <Skill {...{imageURL: item.imageURL, skillName: item.skillName}} />)
+              techList.map((item) => <Skill {...{imageURL: item.imageURL, skillName: item.skillName}} key={item.skillName} />)
             }
           </div>
           <h1 className="text-2xl uppercase font-bold text-yellow-500 mt-5">Professional Skills</h1>
           <div className="flex flex-row flex-wrap justify-center">
             {
-              profList.map((item) => <Skill {...{imageURL: item.imageURL, skillName: item.skillName}} />)
+              profList.map((item) => <Skill {...{imageURL: item.imageURL, skillName: item.skillName}} key={item.skillName} />)
             }
           </div>
 
