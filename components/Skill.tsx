@@ -17,7 +17,7 @@ const Skill = (
       <div className="m-5 p-5 text-center">
         <Image
           loader={() => imageURL}
-          src={skillName}
+          src={imageURL}
           alt={`Icon of ${skillName}`}
           width={100}
           height={100}

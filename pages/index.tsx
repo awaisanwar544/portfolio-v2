@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             Hi! I&prime;m Awais Anwar, and I&prime;m a full-stack web developer. I have completed software development Bootcamp at Microverse and spent more than 1200+ hours of pair programming with other developers all over the world. I took the challenge to build some interesting projects from simple landing pages to complex web applications and APIs.
             </p>
             <p className="text-md m-10">
-            Before that, I worked for 6 years as a freelance Graphics and UI designer. As a UI designer, I developed innovative user interface experiences that met the client's and business needs. The recent app I helped design was a streaming app for one of the top TV channels in the country. Also, I created buttons, widgets, illustrations, and animations for 2D games. Working on exciting user interfaces, prototypes and digital assets encouraged me toward software development.
+            Before that, I worked for 6 years as a freelance Graphics and UI designer. As a UI designer, I developed innovative user interface experiences that met the client&prime;s and business needs. The recent app I helped design was a streaming app for one of the top TV channels in the country. Also, I created buttons, widgets, illustrations, and animations for 2D games. Working on exciting user interfaces, prototypes and digital assets encouraged me toward software development.
             </p>
           </div>
         </div>
