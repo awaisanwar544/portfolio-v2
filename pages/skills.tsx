@@ -60,7 +60,7 @@ const profList: { imageURL: string, skillName: string }[] = [
   'skillName': 'Effective Networking'},
 ]
 
-const Home: NextPage = () => {
+const Skills: NextPage = () => {
   return (
     <div>
       <Head>
@@ -91,4 +91,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Skills
