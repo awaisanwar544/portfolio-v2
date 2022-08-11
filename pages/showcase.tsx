@@ -3,24 +3,55 @@ import Head from 'next/head'
 import Navigation from '../components/Navigation'
 import React, { useState } from 'react';
 import Image from 'next/image'
-import Link from 'next/link'
 
 const projects: { id: number, imageURL: string, title: string, techStack: string, liveLink: string, github: string, description: string }[] = [
   {'id': 1,
-  'imageURL': '/auraside_logo.png',
-  'title': 'Frontend Developer',
-  'techStack': 'AuraSide Inc.',
-  'liveLink': 'May 2022 - Present',
-  'github': 'Remote',
-  'description': `Create, update and maintain the user interface and frontend functionality of the web app "mantle". Ensure high-quality graphic standards and brand consistency while following the design guidelines and Figma prototype.
+  'imageURL': '/bookdev.png',
+  'title': 'BookDev - Hire a Developer',
+  'techStack': 'Ruby on Rails | React | Redux | Tailwind CSS',
+  'liveLink': 'https://book-dev.herokuapp.com/',
+  'github': 'https://github.com/awaisanwar544/final-capstone-ui',
+  'description': `This is a web page that let's you make an appointment with a developer. This app makes use of API calls to its back-end API to get the data for everything regarding users, developers, and skills.
   `,},
-  {'id': 1,
-  'imageURL': '/auraside_logo.png',
-  'title': 'Frontend Developer',
-  'techStack': 'AuraSide Inc.',
-  'liveLink': 'May 2022 - Present',
-  'github': 'Remote',
-  'description': `Create, update and maintain the user interface and frontend functionality of the web app "mantle". Ensure high-quality graphic standards and brand consistency while following the design guidelines and Figma prototype.
+  {'id': 2,
+  'imageURL': '/space.png',
+  'title': 'Space X',
+  'techStack': 'React | Redux',
+  'liveLink': 'https://sweet-biscotti-fa21dd.netlify.app/',
+  'github': 'https://github.com/awaisanwar544/spacex-project',
+  'description': `A react based application for booking space travels and join missions.
+  `,},
+  {'id': 6,
+  'imageURL': '/events.png',
+  'title': 'Kontests',
+  'techStack': 'React | Redux',
+  'liveLink': 'https://mellow-concha-b54076.netlify.app/',
+  'github': 'https://github.com/awaisanwar544/kontests',
+  'description': `A web app that provides the updates about upcoming and ongoing tech events around the world.
+  `,},
+  {'id': 3,
+  'imageURL': '/bookstore.png',
+  'title': 'BookStore CMS',
+  'techStack': 'React | Redux',
+  'liveLink': 'https://sprightly-cannoli-671978.netlify.app/',
+  'github': 'https://github.com/awaisanwar544/bookstore',
+  'description': `A react based application for books lovers.
+  `,},
+  {'id': 4,
+  'imageURL': '/recipe.png',
+  'title': 'Recipe App - Create and Browse Recipes',
+  'techStack': 'Ruby on Rails',
+  'liveLink': 'https://chef-recipes-app.herokuapp.com/',
+  'github': 'https://github.com/awaisanwar544/recipe-app',
+  'description': `The Recipe app is a classic example of a recipe application that is fully functional webapp. It includes the list of recipe created by Users and allow users interact with them.
+  `,},
+  {'id': 5,
+  'imageURL': '/khaata.png',
+  'title': 'Khaata - A book keeping app',
+  'techStack': 'Ruby on Rails | Bootstrap',
+  'liveLink': 'https://khaata-app.herokuapp.com/',
+  'github': 'https://github.com/awaisanwar544/khaata',
+  'description': `The Khaata App keeps track of users daily transactions. A sample application built with Ruby on Rails with user authentication and session storage.
   `,},
 ]
 
@@ -63,12 +94,12 @@ const Showcase: NextPage = () => {
             <p className="text-gray-400">{projects[currentProject].techStack}</p>
             <p className="italic">{projects[currentProject].description}</p>
             <div className="flex flex-row space-x-10 text-center justify-center m-5">
-              <Link href={projects[currentProject].liveLink}>
-                <a className="focus:outline-none text-black bg-yellow-500 hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900">Live Demo</a>
-              </Link>
-              <Link href={projects[currentProject].github}>
-                <a className="focus:outline-none text-black bg-yellow-500 hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900">Github Repo</a>
-              </Link>
+              <div>
+                <a href={projects[currentProject].liveLink} target="_blank" rel="noopener noreferrer" className="focus:outline-none text-black bg-yellow-500 hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900">Live Demo</a>
+              </div>
+              <div>
+                <a href={projects[currentProject].github} target="_blank" rel="noopener noreferrer" className="focus:outline-none text-black bg-yellow-500 hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900">Github Repo</a>
+              </div>
             </div>
           </div>
 
