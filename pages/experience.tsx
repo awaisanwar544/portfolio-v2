@@ -37,7 +37,7 @@ const expList: { id: number, imageURL: string, title: string, company: string, d
   'location': 'Islamabad, Pakistan',
   'description': `Developed Application UIs via emerging Front End Technologies such as Sketch, Invision Studio, Figma, Adobe XD. Communicated with product managers and other stakeholders to translate project requirements and business objectives into polished user interfaces.
   `,},
-  {'id': 4,
+  {'id': 5,
   'imageURL': '',
   'title': 'Graphics Designer',
   'company': 'Freelancer',
@@ -54,7 +54,7 @@ const Experience: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Awais Anwar - Skills</title>
+        <title>Awais Anwar - Experience</title>
         <meta name="description" content="Awais Anwar Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
